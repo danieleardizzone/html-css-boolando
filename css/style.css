@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul,
+ol,
+menu {
+	list-style: none;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-header .row{
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.page-header{
+    background-color: #FF6900;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.gender,
+.icons{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gender{
+    flex-basis: calc((100%/9)*2);
+}
+
+.icons,
+.logo{
+    flex-basis: calc((100%/9)*1);
+}
+
+.logo{
+    display: block;
+}
+
+.gender li,
+.icons li{
+    padding: 0 5px;
+}
+
+.main-section .col{
+    flex-basis: calc(100%/3);
+    flex-direction: column;
+    padding: 10px;
+}
+
+.model-name{
+    font-weight: 700;
+}
+
+.actual-price{
+    font-weight: 700;
+    color: red;
+}
+
+.full-price{
+    text-decoration: line-through;
+}
+
+.card{
+    position: relative;
+}
+
+.second{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.second{
+    opacity: 0;
+}
+
+.card:hover .second{
+    opacity: 1;
+}
+
+.heart{
+    position:absolute;
+    right: 0;
+    top: 10px;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 25px;
+}
+
+.heart:hover{
+    color: red;
+}
+
+.mini-cards{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.red-card{
+    background-color: red;
+}
+
+.green-card{
+    background-color: green;
+}
+
+.page-footer{
+    background-color: #1A1A1A;
+    color: white;
+    line-height: 1.8em;
+}
+
+.page-footer .row{
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer_col-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.information{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+/*ciao*/
+.footer_col-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
